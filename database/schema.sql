@@ -96,4 +96,3 @@ INSERT INTO evaluaciones (id_modulo, titulo, puntaje_minimo, entrega_obligatoria
 SELECT m.id_modulo, 'Actividad práctica del módulo ' || m.orden, 60, TRUE
 FROM modulos m
 WHERE NOT EXISTS (SELECT 1 FROM evaluaciones e WHERE e.id_modulo = m.id_modulo);
-
