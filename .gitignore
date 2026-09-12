@@ -1,0 +1,17 @@
+# IntelliJ IDEA - configuración local del entorno
+.idea/
+
+# Dependencias y salidas de build
+node_modules/
+dist/
+build/
+coverage/
+
+# Variables de entorno y credenciales locales
+.env
+.env.*
+!.env.example
+
+# Archivos del sistema
+*.log
+*.tmp
